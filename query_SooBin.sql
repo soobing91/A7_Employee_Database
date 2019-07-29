@@ -71,7 +71,7 @@ SELECT
 FROM dept_emp de
     LEFT JOIN emp e ON de.emp_no = e.emp_no
     LEFT JOIN dept d ON de.dept_no = d.dept_no
-WHERE d.dept_name = 'Sales' or d.dept_name = 'Development'
+WHERE d.dept_name = 'Sales' OR d.dept_name = 'Development'
 ORDER BY de.emp_no;
 
 -- 8. In descending order, list the frequency count of employee last names,
